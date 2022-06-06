@@ -536,7 +536,7 @@ $reg_result = mysqli_query($con, $reg_query);
                 ?>
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div href="#contact-us" class="mini-box">
-                            <i><?php echo '<img src="data:image;base64,' . base64_encode($rows['icon']) . ' " alt="image" >' ?></i>
+                            <i><img src="<?php echo 'upload/'.$rows['icon'];?>" alt="image" ></i>
                             <strong><?php echo $rows['name']; ?></strong>
 
                             <a href="services_info/insurance.php" class="btn btn-primary">Read More</a>

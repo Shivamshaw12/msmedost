@@ -11,7 +11,13 @@ $db=mysqli_select_db($con,'msmedost');
 	{
 
 		$name=$_POST['name'];
-		$filename =addslashes(file_get_contents($_FILES["image"]["tmp_name"])) ;
+		// $filename =addslashes(file_get_contents($_FILES["image"]["tmp_name"])) ;
+		if(!empty($_FILES['image']['name'][0])){
+			$filename = $_FILES['image']['name']; 
+		  move_uploaded_file($_FILES['image']['tmp_name'], "upload/$filename");
+		}else{
+		$filename = $_POST['icon'];
+		}
 
 		$query="INSERT INTO `registration` (`name`,`icon`) VALUES ('$name','$filename')";
 		$query_run= mysqli_query($con,$query);

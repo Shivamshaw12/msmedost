@@ -62,6 +62,7 @@
                             <div class="col-lg-12 ">
                                 <fieldset>
                                     <label for="image" style="font-weight: 300;">Upload the logo</label>
+                                    
 
                                     <input type="file" name="image" id="image" class="form-control" accept="image/png, image/gif, image/jpeg" />
                                 </fieldset>
