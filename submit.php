@@ -17,7 +17,7 @@ $service_cat4= $_POST['service-cat4'];
 $service_cat5= $_POST['service-cat5'];
 $message= $_POST['message'];
 
-$to="sskjha2016@gmail.com";
+$to="shivam12shaw@gmail.com";
 $enquiry="services";
 $msg="Name:         ".$name."\n"."Phone no.:        ".$phone."\n"."Alternate phone no.:         ".$alt_phone."\n"."city:         ".$city."\n"."Address:         ".$address."\n"."Landmark:          ".$landmark."\n"."Service category:         ".$service_category."\n"."Service Required:         ".$service_cat1."\n"."Service Required:         ".$service_cat2."\n"."Service Required:         ".$service_cat3."\n"."Service Required:         ".$service_cat4."\n"."Service Required:         ".$service_cat5."\n"."Special Instruction/ Message:          ".$message;
 $header="from:".$email;
